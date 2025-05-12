@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MainForm.MainForm">
+  <grid id="27dc6" binding="MainPanel" layout-manager="CardLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="745" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-16697964"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="5e882" binding="startPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <card name="startPanel"/>
+        </constraints>
+        <properties>
+          <background color="-16697964"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="76060" class="javax.swing.JButton" binding="startButton">
+            <constraints border-constraint="South"/>
+            <properties>
+              <background color="-1447447"/>
+              <foreground color="-310478"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Empezar!"/>
+            </properties>
+          </component>
+          <component id="2c32a" class="javax.swing.JLabel" binding="lblWelcome">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <background color="-16697964"/>
+              <foreground color="-1447447"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="&lt;html&gt;&lt;div style='text-align: center;'&gt;Bienvenidos a 'EDUCATRON 3000'!&lt;br&gt;Un programa que intentará adivinar en qué curso estás inscrito.&lt;/div&gt;&lt;/html&gt; "/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="a481c" binding="question1Panel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <card name="Question1"/>
+        </constraints>
+        <properties>
+          <background color="-16697964"/>
+          <foreground color="-1447447"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="a5d95" class="javax.swing.JLabel" binding="lblQuestion1">
+            <constraints border-constraint="North"/>
+            <properties>
+              <background color="-16697964"/>
+              <foreground color="-1447447"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Pregunta 1"/>
+            </properties>
+          </component>
+          <component id="7ccd7" class="javax.swing.JButton" binding="btnNext1">
+            <constraints border-constraint="South"/>
+            <properties>
+              <background color="-1447447"/>
+              <enabled value="true"/>
+              <foreground color="-310478"/>
+              <hideActionText value="false"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Siguiente"/>
+            </properties>
+          </component>
+          <grid id="b69bb" binding="question1" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="25" left="50" bottom="25" right="50"/>
+            <constraints border-constraint="Center"/>
+            <properties>
+              <background color="-16697964"/>
+              <foreground color="-1447447"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="6a960" class="javax.swing.JLabel" binding="lblQuest1Text">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16697964"/>
+                  <foreground color="-1447447"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="¿Cuál es tu formación? Selecciona sólo estudios de mayor nivel."/>
+                </properties>
+              </component>
+              <component id="e0546" class="javax.swing.JRadioButton" binding="rbQuest1Opt1">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16697964"/>
+                  <foreground color="-1447447"/>
+                  <selected value="false"/>
+                  <text value="ESO"/>
+                </properties>
+              </component>
+              <component id="72291" class="javax.swing.JRadioButton" binding="rbQuest1Opt2">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16697964"/>
+                  <foreground color="-1447447"/>
+                  <text value="Bachillerato"/>
+                </properties>
+              </component>
+              <component id="29ede" class="javax.swing.JRadioButton" binding="rbQuest1Opt3">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16697964"/>
+                  <foreground color="-1447447"/>
+                  <text value="FP Grado Medio"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="43365" binding="question2Panel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <card name="Question2"/>
+        </constraints>
+        <properties>
+          <background color="-16697964"/>
+          <foreground color="-1447447"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="65c40" class="javax.swing.JLabel" binding="lblQuestion2">
+            <constraints border-constraint="North"/>
+            <properties>
+              <background color="-16697964"/>
+              <foreground color="-1447447"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Pregunta 2"/>
+            </properties>
+          </component>
+          <component id="4d449" class="javax.swing.JButton" binding="btnNext2">
+            <constraints border-constraint="South"/>
+            <properties>
+              <background color="-1447447"/>
+              <foreground color="-310478"/>
+              <text value="Siguiente"/>
+            </properties>
+          </component>
+          <grid id="8a80d" binding="question2" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="25" left="50" bottom="25" right="50"/>
+            <constraints border-constraint="Center"/>
+            <properties>
+              <background color="-16697964"/>
+              <foreground color="-1447447"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="c81bf" class="javax.swing.JLabel" binding="lblQuest2Text">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16697964"/>
+                  <foreground color="-1447447"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="¿Te gusta o se te da bien la informática?"/>
+                </properties>
+              </component>
+              <component id="29a2f" class="javax.swing.JRadioButton" binding="rbQuest2Opt1">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16697964"/>
+                  <enabled value="true"/>
+                  <foreground color="-1447447"/>
+                  <text value="Sí"/>
+                </properties>
+              </component>
+              <component id="df246" class="javax.swing.JRadioButton" binding="rbQuest2Opt2">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16697964"/>
+                  <foreground color="-1447447"/>
+                  <text value="No"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="1508" binding="question3Panel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <card name="Question3"/>
+        </constraints>
+        <properties>
+          <background color="-16697964"/>
+          <foreground color="-1447447"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="1f05f" class="javax.swing.JLabel" binding="lblQuestion3">
+            <constraints border-constraint="North"/>
+            <properties>
+              <background color="-16697964"/>
+              <foreground color="-1447447"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Pregunta 3"/>
+            </properties>
+          </component>
+          <component id="8357c" class="javax.swing.JButton" binding="btnNext3">
+            <constraints border-constraint="South"/>
+            <properties>
+              <background color="-1447447"/>
+              <foreground color="-310478"/>
+              <text value="Siguiente"/>
+            </properties>
+          </component>
+          <grid id="8456f" binding="question3" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="25" left="50" bottom="25" right="50"/>
+            <constraints border-constraint="Center"/>
+            <properties>
+              <background color="-16697964"/>
+              <foreground color="-1447447"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="e0804" class="javax.swing.JLabel" binding="lblQuest3Text">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16697964"/>
+                  <foreground color="-1447447"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="¿Te gusta programar?"/>
+                </properties>
+              </component>
+              <component id="be2fa" class="javax.swing.JRadioButton" binding="rbQuest3Opt1">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16697964"/>
+                  <foreground color="-1447447"/>
+                  <text value="Sí"/>
+                </properties>
+              </component>
+              <component id="d84d4" class="javax.swing.JRadioButton" binding="rbQuest3Opt2">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16697964"/>
+                  <foreground color="-1447447"/>
+                  <text value="No"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="84181" binding="question4Panel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <card name="Question4"/>
+        </constraints>
+        <properties>
+          <background color="-16697964"/>
+          <foreground color="-1447447"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="cbb7e" class="javax.swing.JLabel" binding="lblQuestion4">
+            <constraints border-constraint="North"/>
+            <properties>
+              <background color="-16697964"/>
+              <foreground color="-1447447"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Pregunta 4"/>
+            </properties>
+          </component>
+          <component id="4a887" class="javax.swing.JButton" binding="btnNext4">
+            <constraints border-constraint="South"/>
+            <properties>
+              <background color="-1447447"/>
+              <foreground color="-310478"/>
+              <text value="Siguiente"/>
+            </properties>
+          </component>
+          <grid id="83e17" binding="question4" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="25" left="50" bottom="25" right="50"/>
+            <constraints border-constraint="Center"/>
+            <properties>
+              <background color="-16697964"/>
+              <foreground color="-1447447"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="a94bd" class="javax.swing.JLabel" binding="lblQuest4Text">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16697964"/>
+                  <foreground color="-1447447"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="¿Eres una persona creativa?"/>
+                </properties>
+              </component>
+              <component id="502f9" class="javax.swing.JRadioButton" binding="rbQuest4Opt1">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16697964"/>
+                  <foreground color="-1447447"/>
+                  <text value="Sí"/>
+                </properties>
+              </component>
+              <component id="9da09" class="javax.swing.JRadioButton" binding="rbQuest4Opt2">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16697964"/>
+                  <foreground color="-1447447"/>
+                  <text value="No"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="5285b" binding="question5Panel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <card name="Question5"/>
+        </constraints>
+        <properties>
+          <background color="-16697964"/>
+          <foreground color="-1447447"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="ef79b" class="javax.swing.JLabel" binding="lblQuestion5">
+            <constraints border-constraint="North"/>
+            <properties>
+              <background color="-16697964"/>
+              <foreground color="-1447447"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Pregunta 5"/>
+            </properties>
+          </component>
+          <component id="faa31" class="javax.swing.JButton" binding="btnNext5">
+            <constraints border-constraint="South"/>
+            <properties>
+              <background color="-1447447"/>
+              <foreground color="-310478"/>
+              <horizontalTextPosition value="11"/>
+              <text value="Siguiente"/>
+            </properties>
+          </component>
+          <grid id="8df6b" binding="question5" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="25" left="50" bottom="25" right="50"/>
+            <constraints border-constraint="Center"/>
+            <properties>
+              <background color="-16697964"/>
+              <foreground color="-1447447"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="a6628" class="javax.swing.JLabel" binding="lblQuest5Text">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16697964"/>
+                  <foreground color="-1447447"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="¿Te resultaron interesantes en el instituto asignaturas como biología o química?"/>
+                </properties>
+              </component>
+              <component id="c9b9d" class="javax.swing.JRadioButton" binding="rbQuest5Opt1">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16697964"/>
+                  <foreground color="-1447447"/>
+                  <text value="Sí"/>
+                </properties>
+              </component>
+              <component id="13645" class="javax.swing.JRadioButton" binding="rbQuest5Opt2">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16697964"/>
+                  <foreground color="-1447447"/>
+                  <text value="No"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="3ebd2" binding="resultPanel" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="25" left="50" bottom="25" right="50"/>
+        <constraints>
+          <card name="Results"/>
+        </constraints>
+        <properties>
+          <background color="-16697964"/>
+          <foreground color="-1447447"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="62bae" class="javax.swing.JButton" binding="btnFinal1">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="250" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1447447"/>
+              <foreground color="-310478"/>
+              <text value="Intentar otra vez"/>
+            </properties>
+          </component>
+          <component id="ecc7d" class="javax.swing.JLabel" binding="lblFinal">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-16697964"/>
+              <foreground color="-1447447"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="44440" class="javax.swing.JButton" binding="btnFinal2">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="250" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1447447"/>
+              <foreground color="-310478"/>
+              <text value="Salir"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
