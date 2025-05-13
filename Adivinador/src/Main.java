@@ -13,8 +13,5 @@ public class Main {
         frame.pack();
         frame.setBounds(250, 150, 600, 400);
         frame.setVisible(true);
-
-
-
     }
 }
