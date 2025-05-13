@@ -11,6 +11,10 @@ public class Main {
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
+        frame.setBounds(250, 150, 600, 400);
         frame.setVisible(true);
+
+
+
     }
 }

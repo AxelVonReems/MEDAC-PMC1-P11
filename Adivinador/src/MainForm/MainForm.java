@@ -50,6 +50,7 @@ public class MainForm {
     private JButton btnFinal1;
     private JButton btnFinal2;
     private JLabel lblFinal;
+    private JLabel DAW_Logo;
 
     // Answers
     private int answer1 = 0, answer2 = 0, answer3 = 0, answer4 = 0, answer5 = 0;
@@ -271,6 +272,15 @@ public class MainForm {
                 System.exit(0);
             }
         });
+
+        // Adding DAW logo to the DAW_Logo label
+        ImageIcon logo = new ImageIcon("logoSite.jpg");
+
+        Image scaledImage = logo.getImage().getScaledInstance(450, 97, Image.SCALE_SMOOTH);
+        logo = new ImageIcon(scaledImage);
+
+        DAW_Logo.setIcon(logo);
+
     }
 
     public JPanel getMainPanel() {

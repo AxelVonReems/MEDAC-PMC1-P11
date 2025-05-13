@@ -2,7 +2,7 @@
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MainForm.MainForm">
   <grid id="27dc6" binding="MainPanel" layout-manager="CardLayout" hgap="0" vgap="0">
     <constraints>
-      <xy x="20" y="20" width="745" height="400"/>
+      <xy x="26" y="10" width="590" height="540"/>
     </constraints>
     <properties>
       <background color="-16697964"/>
@@ -15,6 +15,9 @@
         </constraints>
         <properties>
           <background color="-16697964"/>
+          <enabled value="true"/>
+          <font/>
+          <preferredSize width="480" height="480"/>
         </properties>
         <border type="none"/>
         <children>
@@ -22,19 +25,43 @@
             <constraints border-constraint="South"/>
             <properties>
               <background color="-1447447"/>
+              <borderPainted value="true"/>
+              <contentAreaFilled value="true"/>
+              <font size="16" style="1"/>
               <foreground color="-310478"/>
+              <hideActionText value="false"/>
               <horizontalTextPosition value="0"/>
+              <inheritsPopupMenu value="false"/>
+              <margin top="0" left="0" bottom="0" right="0"/>
+              <maximumSize width="120" height="40"/>
+              <minimumSize width="120" height="40"/>
+              <preferredSize width="120" height="40"/>
+              <rolloverEnabled value="false"/>
               <text value="Empezar!"/>
+              <verifyInputWhenFocusTarget value="true"/>
+              <visible value="true"/>
             </properties>
           </component>
           <component id="2c32a" class="javax.swing.JLabel" binding="lblWelcome">
             <constraints border-constraint="Center"/>
             <properties>
               <background color="-16697964"/>
+              <font size="16"/>
               <foreground color="-1447447"/>
               <horizontalAlignment value="0"/>
               <horizontalTextPosition value="0"/>
-              <text value="&lt;html&gt;&lt;div style='text-align: center;'&gt;Bienvenidos a 'EDUCATRON 3000'!&lt;br&gt;Un programa que intentará adivinar en qué curso estás inscrito.&lt;/div&gt;&lt;/html&gt; "/>
+              <maximumSize width="2147483647" height="200"/>
+              <minimumSize width="104" height="200"/>
+              <preferredSize width="480" height="200"/>
+              <text value="&lt;html&gt;&lt;div style='text-align: center;'&gt;Bienvenidos a 'EDUCATRON 3000'!&lt;br&gt;Un programa que intentará adivinar en qué curso estás inscrito.&lt;/div&gt;&lt;/html&gt;"/>
+            </properties>
+          </component>
+          <component id="85b33" class="javax.swing.JLabel" binding="DAW_Logo">
+            <constraints border-constraint="North"/>
+            <properties>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value=""/>
             </properties>
           </component>
         </children>
@@ -52,11 +79,14 @@
           <component id="a5d95" class="javax.swing.JLabel" binding="lblQuestion1">
             <constraints border-constraint="North"/>
             <properties>
+              <alignmentY value="0.5"/>
               <background color="-16697964"/>
+              <font size="16" style="1"/>
               <foreground color="-1447447"/>
               <horizontalAlignment value="0"/>
               <horizontalTextPosition value="0"/>
-              <text value="Pregunta 1"/>
+              <opaque value="false"/>
+              <text value="&lt;html&gt;&lt;br&gt;Pregunta 1&lt;/html&gt;"/>
             </properties>
           </component>
           <component id="7ccd7" class="javax.swing.JButton" binding="btnNext1">
@@ -64,27 +94,31 @@
             <properties>
               <background color="-1447447"/>
               <enabled value="true"/>
+              <font size="16" style="1"/>
               <foreground color="-310478"/>
               <hideActionText value="false"/>
               <horizontalTextPosition value="0"/>
+              <preferredSize width="50" height="40"/>
               <text value="Siguiente"/>
             </properties>
           </component>
-          <grid id="b69bb" binding="question1" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="b69bb" binding="question1" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="25" left="50" bottom="25" right="50"/>
             <constraints border-constraint="Center"/>
             <properties>
               <background color="-16697964"/>
+              <font size="16"/>
               <foreground color="-1447447"/>
             </properties>
             <border type="none"/>
             <children>
               <component id="6a960" class="javax.swing.JLabel" binding="lblQuest1Text">
                 <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-16697964"/>
+                  <font size="16"/>
                   <foreground color="-1447447"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
@@ -93,10 +127,12 @@
               </component>
               <component id="e0546" class="javax.swing.JRadioButton" binding="rbQuest1Opt1">
                 <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-16697964"/>
+                  <focusCycleRoot value="true"/>
+                  <font size="16"/>
                   <foreground color="-1447447"/>
                   <selected value="false"/>
                   <text value="ESO"/>
@@ -104,24 +140,36 @@
               </component>
               <component id="72291" class="javax.swing.JRadioButton" binding="rbQuest1Opt2">
                 <constraints>
-                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-16697964"/>
+                  <font size="16"/>
                   <foreground color="-1447447"/>
                   <text value="Bachillerato"/>
                 </properties>
               </component>
               <component id="29ede" class="javax.swing.JRadioButton" binding="rbQuest1Opt3">
                 <constraints>
-                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-16697964"/>
+                  <font size="16"/>
                   <foreground color="-1447447"/>
                   <text value="FP Grado Medio"/>
                 </properties>
               </component>
+              <hspacer id="e2f46">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="d12dc">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
             </children>
           </grid>
         </children>
@@ -140,21 +188,25 @@
             <constraints border-constraint="North"/>
             <properties>
               <background color="-16697964"/>
+              <font size="16" style="1"/>
               <foreground color="-1447447"/>
               <horizontalAlignment value="0"/>
               <horizontalTextPosition value="0"/>
-              <text value="Pregunta 2"/>
+              <text value="&lt;html&gt;&lt;br&gt;Pregunta 2&lt;/html&gt;"/>
             </properties>
           </component>
           <component id="4d449" class="javax.swing.JButton" binding="btnNext2">
             <constraints border-constraint="South"/>
             <properties>
               <background color="-1447447"/>
+              <font size="16" style="1"/>
               <foreground color="-310478"/>
+              <horizontalTextPosition value="0"/>
+              <preferredSize width="91" height="40"/>
               <text value="Siguiente"/>
             </properties>
           </component>
-          <grid id="8a80d" binding="question2" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="8a80d" binding="question2" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="25" left="50" bottom="25" right="50"/>
             <constraints border-constraint="Center"/>
             <properties>
@@ -165,10 +217,11 @@
             <children>
               <component id="c81bf" class="javax.swing.JLabel" binding="lblQuest2Text">
                 <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-16697964"/>
+                  <font size="16"/>
                   <foreground color="-1447447"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
@@ -177,25 +230,37 @@
               </component>
               <component id="29a2f" class="javax.swing.JRadioButton" binding="rbQuest2Opt1">
                 <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-16697964"/>
                   <enabled value="true"/>
+                  <font size="16"/>
                   <foreground color="-1447447"/>
                   <text value="Sí"/>
                 </properties>
               </component>
               <component id="df246" class="javax.swing.JRadioButton" binding="rbQuest2Opt2">
                 <constraints>
-                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-16697964"/>
+                  <font size="16"/>
                   <foreground color="-1447447"/>
                   <text value="No"/>
                 </properties>
               </component>
+              <hspacer id="fc59">
+                <constraints>
+                  <grid row="1" column="0" row-span="2" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="9496e">
+                <constraints>
+                  <grid row="1" column="2" row-span="2" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
             </children>
           </grid>
         </children>
@@ -214,21 +279,26 @@
             <constraints border-constraint="North"/>
             <properties>
               <background color="-16697964"/>
+              <font size="16" style="1"/>
               <foreground color="-1447447"/>
               <horizontalAlignment value="0"/>
               <horizontalTextPosition value="0"/>
-              <text value="Pregunta 3"/>
+              <text value="&lt;html&gt;&lt;br&gt;Pregunta 3&lt;/html&gt;"/>
             </properties>
           </component>
           <component id="8357c" class="javax.swing.JButton" binding="btnNext3">
             <constraints border-constraint="South"/>
             <properties>
               <background color="-1447447"/>
+              <font size="16" style="1"/>
               <foreground color="-310478"/>
+              <maximumSize width="107" height="40"/>
+              <minimumSize width="107" height="40"/>
+              <preferredSize width="91" height="40"/>
               <text value="Siguiente"/>
             </properties>
           </component>
-          <grid id="8456f" binding="question3" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="8456f" binding="question3" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="25" left="50" bottom="25" right="50"/>
             <constraints border-constraint="Center"/>
             <properties>
@@ -239,10 +309,11 @@
             <children>
               <component id="e0804" class="javax.swing.JLabel" binding="lblQuest3Text">
                 <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-16697964"/>
+                  <font size="16"/>
                   <foreground color="-1447447"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
@@ -251,24 +322,36 @@
               </component>
               <component id="be2fa" class="javax.swing.JRadioButton" binding="rbQuest3Opt1">
                 <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-16697964"/>
+                  <font size="16"/>
                   <foreground color="-1447447"/>
                   <text value="Sí"/>
                 </properties>
               </component>
               <component id="d84d4" class="javax.swing.JRadioButton" binding="rbQuest3Opt2">
                 <constraints>
-                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-16697964"/>
+                  <font size="16"/>
                   <foreground color="-1447447"/>
                   <text value="No"/>
                 </properties>
               </component>
+              <hspacer id="3910e">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="35392">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
             </children>
           </grid>
         </children>
@@ -287,21 +370,26 @@
             <constraints border-constraint="North"/>
             <properties>
               <background color="-16697964"/>
+              <font size="16" style="1"/>
               <foreground color="-1447447"/>
               <horizontalAlignment value="0"/>
               <horizontalTextPosition value="0"/>
-              <text value="Pregunta 4"/>
+              <text value="&lt;html&gt;&lt;br&gt;Pregunta 4&lt;/html&gt;"/>
             </properties>
           </component>
           <component id="4a887" class="javax.swing.JButton" binding="btnNext4">
             <constraints border-constraint="South"/>
             <properties>
               <background color="-1447447"/>
+              <font size="16" style="1"/>
               <foreground color="-310478"/>
+              <maximumSize width="107" height="40"/>
+              <minimumSize width="107" height="40"/>
+              <preferredSize width="107" height="40"/>
               <text value="Siguiente"/>
             </properties>
           </component>
-          <grid id="83e17" binding="question4" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="83e17" binding="question4" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="25" left="50" bottom="25" right="50"/>
             <constraints border-constraint="Center"/>
             <properties>
@@ -312,10 +400,11 @@
             <children>
               <component id="a94bd" class="javax.swing.JLabel" binding="lblQuest4Text">
                 <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-16697964"/>
+                  <font size="16"/>
                   <foreground color="-1447447"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
@@ -324,24 +413,36 @@
               </component>
               <component id="502f9" class="javax.swing.JRadioButton" binding="rbQuest4Opt1">
                 <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-16697964"/>
+                  <font size="16"/>
                   <foreground color="-1447447"/>
                   <text value="Sí"/>
                 </properties>
               </component>
               <component id="9da09" class="javax.swing.JRadioButton" binding="rbQuest4Opt2">
                 <constraints>
-                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-16697964"/>
+                  <font size="16"/>
                   <foreground color="-1447447"/>
                   <text value="No"/>
                 </properties>
               </component>
+              <hspacer id="3760e">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="89e82">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
             </children>
           </grid>
         </children>
@@ -360,22 +461,27 @@
             <constraints border-constraint="North"/>
             <properties>
               <background color="-16697964"/>
+              <font size="16" style="1"/>
               <foreground color="-1447447"/>
               <horizontalAlignment value="0"/>
               <horizontalTextPosition value="0"/>
-              <text value="Pregunta 5"/>
+              <text value="&lt;html&gt;&lt;br&gt;Pregunta 5&lt;/html&gt;"/>
             </properties>
           </component>
           <component id="faa31" class="javax.swing.JButton" binding="btnNext5">
             <constraints border-constraint="South"/>
             <properties>
               <background color="-1447447"/>
+              <font size="16" style="1"/>
               <foreground color="-310478"/>
               <horizontalTextPosition value="11"/>
+              <maximumSize width="107" height="40"/>
+              <minimumSize width="107" height="40"/>
+              <preferredSize width="107" height="40"/>
               <text value="Siguiente"/>
             </properties>
           </component>
-          <grid id="8df6b" binding="question5" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="8df6b" binding="question5" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="25" left="50" bottom="25" right="50"/>
             <constraints border-constraint="Center"/>
             <properties>
@@ -386,41 +492,54 @@
             <children>
               <component id="a6628" class="javax.swing.JLabel" binding="lblQuest5Text">
                 <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-16697964"/>
+                  <font size="16"/>
                   <foreground color="-1447447"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="¿Te resultaron interesantes en el instituto asignaturas como biología o química?"/>
+                  <text value="&lt;html&gt;&lt;div style='text-align: center;'&gt;¿Te resultaron interesantes en el instituto&lt;br&gt;asignaturas como biología o química?&lt;/div&gt;&lt;/html&gt; "/>
                 </properties>
               </component>
               <component id="c9b9d" class="javax.swing.JRadioButton" binding="rbQuest5Opt1">
                 <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-16697964"/>
+                  <font size="16"/>
                   <foreground color="-1447447"/>
                   <text value="Sí"/>
                 </properties>
               </component>
               <component id="13645" class="javax.swing.JRadioButton" binding="rbQuest5Opt2">
                 <constraints>
-                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-16697964"/>
+                  <font size="16"/>
                   <foreground color="-1447447"/>
                   <text value="No"/>
                 </properties>
               </component>
+              <hspacer id="2f6d1">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="d72ef">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
             </children>
           </grid>
         </children>
       </grid>
-      <grid id="3ebd2" binding="resultPanel" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="3ebd2" binding="resultPanel" layout-manager="GridLayoutManager" row-count="2" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="25" left="50" bottom="25" right="50"/>
         <constraints>
           <card name="Results"/>
@@ -433,38 +552,55 @@
         <children>
           <component id="62bae" class="javax.swing.JButton" binding="btnFinal1">
             <constraints>
-              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <preferred-size width="250" height="-1"/>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="200" height="40"/>
+                <preferred-size width="200" height="40"/>
+                <maximum-size width="200" height="40"/>
               </grid>
             </constraints>
             <properties>
               <background color="-1447447"/>
+              <font size="16" style="1"/>
               <foreground color="-310478"/>
               <text value="Intentar otra vez"/>
             </properties>
           </component>
           <component id="ecc7d" class="javax.swing.JLabel" binding="lblFinal">
             <constraints>
-              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="0" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <background color="-16697964"/>
+              <font size="16"/>
               <foreground color="-1447447"/>
               <text value=""/>
             </properties>
           </component>
           <component id="44440" class="javax.swing.JButton" binding="btnFinal2">
             <constraints>
-              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
-                <preferred-size width="250" height="-1"/>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="200" height="40"/>
+                <preferred-size width="200" height="40"/>
+                <maximum-size width="200" height="40"/>
               </grid>
             </constraints>
             <properties>
               <background color="-1447447"/>
+              <font size="16" style="1"/>
               <foreground color="-310478"/>
               <text value="Salir"/>
             </properties>
           </component>
+          <hspacer id="d5178">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <hspacer id="afc16">
+            <constraints>
+              <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
         </children>
       </grid>
     </children>
